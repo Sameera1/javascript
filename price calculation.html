@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>my web</title>
+		<script type = "text/javascript">
+			function add(x,y,z)
+			{
+				var total = x + y +z;
+				return total;
+			}
+			
+			function average(x,y,z)
+			{
+				var t = (x + y + z) /3;
+				return t;
+			}
+			
+			function minimum(x,y,z)
+			{
+				var mininum = x;
+				if(y < mininum)
+				{
+					mininum = y;
+				}
+				
+				if(z < mininum)
+				{	
+					mininum = z;
+				}
+				
+				return mininum;
+			}
+			
+			function maximum(x,y,z)
+			{
+				var maxinum = x;
+				if(y > maxinum)
+				{
+					maxinum = y;
+				}
+				
+				if(z > maxinum)
+				{	
+					maxinum = z;
+				}
+				
+				return maxinum;
+			}
+		</script>
+	</head>
+	
+	<body>
+		<script>
+		var num1 = prompt("enter first price");
+		var num2 = prompt("enter the second price");
+		var num3 = prompt("enter the third price")
+		var x = parseInt(num1);
+		var y = parseInt(num2);
+		var z = parseInt(num3);
+		
+			var d = add(x,y,z);
+			document.write( "total is "+d + "<br>");
+			document.write( "average is "+average(x,y,z) + "<br>");
+			document.write( "maximum is "+maximum(x,y,z)+"<br>");
+			document.write( "minimum is "+minimum(x,y,z)+"<br>");
+		</script>
+	</body>
+</html>
