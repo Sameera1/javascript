@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    
+<html>
+<head>
+<title>2.change HTML elements</title>    
+</head>
+    
+<body>
+<h1 style="text-align: center; color: aqua;" id="head">Changing HTML Elements</h1>
+    <h2 id="yes">this is hide</h2>
+<p id="demo">
+    Javascript is used to control the behavior of the web. Since you have to know js in order to develop web sites let’s straight away jump to the lesson. </p>
+    
+<script>document.getElementById("demo").innerHTML = "Using js you can change the HTML document. ";
+    document.getElementById("head").style.color = "red";
+    document.getElementById("yes").style.display = "none";
+    </script
+    
+ <button onclick="document.getElementByID('yes').style.display="block"">Click Me</button>   
+</body>
+</html>
